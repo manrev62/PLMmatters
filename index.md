@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+**(Temporarily) Suppressing Mechanical CAD for the benefit of design on the road to PLM standardization**
 
-You can use the [editor on GitHub](https://github.com/manrev62/PLMmatters/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<img src="https://artes.esa.int/sites/default/files/TDTM_1.png" width="200">
+<img src="https://i.ytimg.com/vi/j4EOTerfyTY/maxresdefault.jpg" width="200">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Some points based on Oleg Shilovitski’s posts on PLM standardisation
+[link to posts](https://www.linkedin.com/feed/update/urn:li:activity:6859379616348479488/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6859379616348479488%29)
+* 	Recently the fashionable trend (Big Data and similar) has been to create ‘order from chaos’ by extracting data and relationships from company and wider data.
+*	With Product data (and by implication PLM, digital threads) we are trying to define order – the product structure (may be BOMs and component assembly structures, feature trees). These are broadly defined from (hopefully/ideally) well defined requirements (product attributes – down to module and component targets(measurable). Hopefully these will be traceable. 
+*	The frame work for the Product data ‘order’ will be  the architecture. This will have several views – hierarchical for physical make up, but also many will be schematic: control systems, piping (fluid flow, hydraulics, pneumatics, acoustic, electromagnetic(?)…, monitoring systems…). Electrical circuits and software are clear examples of schematic sub architectures.
+*	Most non mechanical architectures are schematic and electrical/electronic circuit diagrams, P&IDs, product usage workflows (yes everything is a graph) and known examples.  But the tools used are either industry/professionally specific if they do store data in a structured way (eg P&IDs) but most are at best Visio drawings or similar.
+*	Even with mechanical mechanisms there is a kind of schematic (simplified 2 and 3D kinematics diagrams and of course component assemblies). Requirements to module design targets are schematics (especially if we include conflicts between requirements and modules). Production systems are yes systems and potentially have P&ID like schematics
+*	The point I am getting to is that many products are now SYSTEMS of various kinds – that can be conceptually at least related to each other in a ‘Standard’ way. Anything that has significant mechatronic/control systems design and structure fits this.
+*	Rather than starting with the 3D CAD model of products (as hugely important as they are), might it be worth (both in PLM terms, but also in actual design process terms) explicitly (and may be revolutionary) inverting the Mechanical Design First/Systems second approach to product data and design to be Systems data&design First/Mechanical design second?
+*	Of course as this has an impact on how designers, engineers and organizations work and many are embedded in the Mechanical First approach. (I declare a big assumption on my part there!)
+*	So another way of looking at this is that a product as a system (or set of systems) where the mechanical system is just one amongst equals – means that for a while Mechanical design artifacts need to be suppressed in importance and may even be thought of as a later stage ‘dressing’ of the product architecture (component procurement, specialized design and packaging). Relationships are as important as the data they connect and define vocabularies.
+*	In a way the process industries with P&IDs etc – are schematic based which dress their designs with pipes, pumps, gauges and maybe actuators. But they are largely static designs. But systems like PDMS from Aveva do at least have good database stores behind them
+*	The difference today is to progress that idea to electro mechanical system based products (electrical/electronic/motors, sensors and the rest) have a higher level of kinematic design (or just more complicated static systems and interactions (electo-magnetic, acoustic, optical)
+*	To conclude: 
+* *	This way – the suppression of the importance of CAD/Mechanical design may not directly result in new and better standards, but as a away of design approach and data modelling may be an intermediate step
+* *	MBSE it seems to me does cover a lot of these and certainly is not a barrier to this – but may me more likely to be less effective with Mechanical/CAD still at the front of everyone’s thoughts. MBD also.
+* *	Systems engineering has been around for a while – but the supporting tools (PLM) was predicated on PDM and initially the management of primarily CAD data. The has had a legacy impact even with flexible data structure being possible. But I would assert that mechanical design (in large companies and SMEs) is still the starting point/King. 
+* *	With better system schematics and data relationships – technologies such as AI/ML will be able to have better data structures (inc relationships) to operate on to optimize those systems. After the event analysis from big data analytics will still have a place – but early optimization is surely better.
+*	Who will do this ideological inversion?:
+* *	From a design organization point of view this will need forward looking companies to see ( & confirm) the benefits. 
+* *	Software companies (existing and to be) need to develop (abstract) Systems based first products – which treat all sub systems as equal and importantly connect to each other.  Flexible data structures will be of course necessary – but may converge on some kind of standardization and vocabularies. Either traditional CAD, SolidWorks, Fusion. CATIA, NX etc etc could expose data  (via addins) esp assembly structures & MBD. But new simpler from the ground up CADapps could be defined.
+* *	CADdesigns as dressing would be ‘suppressed’ by encapsulating them as dressing features (managed with standard PDM) until such a time comes when they can be represented as schematic systems like their peer systems such as electrical. The components would be the level at which mechanical dressing would occur. Mechanical schematics are based around existing assembly structures, module and sub module definitions, with kinematics an important area to consider ( as assembly constraints). MDB schematics can probably be usefully exposed.  
+* *	Having clearer views on other schematic based sub systems would still means that they can be designer to fit around those systems and incorporate them in the physical mechanical structure
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/manrev62/PLMmatters/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
